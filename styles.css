@@ -27,7 +27,6 @@ body {
     background-image: url("static/img/logo-grande.png");
     height: 41px;
     width: 153px;
-    margin-top: 1px;
 }
 
 .inscricao {
@@ -37,8 +36,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #add8e6;
-    color: #141414;
+    border: #ADD8E6 3px solid;
+    color: #ffffff;
     border-radius: 10px;
     font-size: 18px;
     font-weight: 500;
@@ -128,18 +127,25 @@ body {
     justify-content: center;
 }
 .inscricao-grande {
+    color: #ffffff;
     display: flex;
     align-items: center;
     height: 98px;
     width: fit-content;
-    padding-inline: 100px;
+    padding-inline: 120px;
     flex-shrink: 0;
     border-radius: 10px;
-    background-color: #ADD8E6;
+    border: #ADD8E6 3px solid;
     margin-bottom: 10px;
     font-family: "Raleway";
     font-weight: 500;
     font-size: 40px;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.inscricao-grande:hover {
+    box-shadow: inset 700px 0 0 0 #add8e6;
+    color: #141414;
 }
 
 .instagram {
@@ -147,13 +153,23 @@ body {
     align-items: center;
     height: 64px;
     width: fit-content;
-    padding-inline: 100px;
+    padding-inline: 195px;
     flex-shrink: 0;
     border-radius: 10px;
-    background-color: #ADD8E6;
     font-size: 30px;
     font-family: "Raleway";
     font-weight: 500;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    background-image: linear-gradient(to right, #add8e6 50%, #515bd4 60%, #8134af 70%, #dd2a7b 80%, #feda77 90%, #f58529 100%);
+    background-size: 300% auto;
+    transition: color .5s ease-in-out, background .5s ease-in-out;
+
+}
+ 
+.instagram:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
 }
 
 a {
@@ -178,6 +194,7 @@ a {
     }
 
     .inscricao-grande {
+        padding-inline: 175px;
         height: 78px;
         font-size: 20px;
     }
@@ -202,7 +219,8 @@ a {
     .logo {
         position: absolute;
         align-self: flex-start;
-        margin-left: 7%;
+        margin-left: 53px;
+        margin-top: 2px;
     }
 
     .Navbar__ToggleShow {
@@ -222,13 +240,13 @@ a {
         align-self: flex-start;
         display: flex;
         cursor: pointer;
-        background-color: #add8e6;
-        color: #141414;
-        width: 42px;
-        height: 42px;
+        color: #ffffff;
+        width: 35px;
+        height: 35px;
         border-radius: 10px;
         justify-content: center;
         align-items: center;
+        border: #add8e6 2px solid
     }
 
     .titulo {
@@ -250,6 +268,11 @@ a {
 @media only screen and (max-width: 985px) {
     .textzin {
         padding: 0;
+    }
+    .textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -285,12 +308,6 @@ a {
         margin-inline: 30px;
     }
 
-    .textos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     .botoes {
         align-items: center;
     }
@@ -304,9 +321,9 @@ a {
     }
 }
 
-@media only screen and (max-width: 680px) {
-    .logo {
-        margin-left: 50px;
+@media only screen and (max-width: 700) {
+    .conteudo {
+        padding-inline: 0;
     }
 }
 
@@ -327,7 +344,7 @@ a {
     }
 
     .inscricao-grande {
-        padding-inline: 50px;
+        padding-inline: 30px;
     }
 
     .instagram {
@@ -338,6 +355,12 @@ a {
         background-image: url("static/img/logo-pequena.png");
         height: 39px;
         width: 39px;
+    }
+
+    .inscricao {
+        font-size: 16px;
+        height: 35px;
+        border-width: 2px;
     }
 }
 
