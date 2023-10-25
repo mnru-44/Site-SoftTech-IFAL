@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:400|Sulphur+Point:400|Raleway:500,400|Inter:400");
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #141414;
+    background-image: url("static/img/background.svg");
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0;
+    height: 100%;
+}
+
+.Navbar {
+    background: rgba(20, 20, 20, 0.70);
+    backdrop-filter: blur(7.5px);
+    display: flex;
+    padding: 16px;
+    font-family: sans-serif;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background-image: url("static/img/logo-grande.png");
+    height: 41px;
+    width: 153px;
+    margin-top: 1px;
+}
+
+.inscricao {
+    font-family: "Raleway";
+    width: 175px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #add8e6;
+    color: #141414;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.inscricao:hover {
+    box-shadow: inset 190px 0 0 0 #54b3d6;
+    color: white;
+}
+
+.Navbar__Items {
+    font-family: "Raleway", "Helvetica";
+    display: flex;
+    justify-content: space-evenly;
+    width: 680px;
+}
+
+.Navbar__Link-toggle {
+    display: none;
+}
+
+.frame {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo {
+    margin-inline: 50px;
+    position: absolute;
+    color: #ffffff;
+    width: fit-content;
+    height: 774px;
+    padding-inline: 10%;
+    border-radius: 25px;
+    border: 1px solid rgba(173, 216, 230, 0.30);
+    background: rgba(20, 20, 20, 0.18);
+    backdrop-filter: blur(7.5px);
+    margin-top: 900px;
+    display: flex;
+    align-items: center;
+}
+
+.textos {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title-wrapper {
+    padding: 0;
+    margin-left: 40px;
+    margin-right: -50px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    color: #FFF;
+    font-family: "Arvo";
+    font-size: 170px;
+    font-weight: bold;
+}
+
+.text-wrapper {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.textzin {
+    padding-right: 100px;
+    color: #FFF;
+    text-align: justify;
+    font-family: "Sulphur Point";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inscricao-grande {
+    display: flex;
+    align-items: center;
+    height: 98px;
+    width: fit-content;
+    padding-inline: 100px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: #ADD8E6;
+    margin-bottom: 10px;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    width: fit-content;
+    padding-inline: 100px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: #ADD8E6;
+    font-size: 30px;
+    font-family: "Raleway";
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #141414
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .conteudo {
+        display: flex;
+        align-items: center;
+        height: 750px;
+    }
+
+    .titulo {
+        font-size: 100px
+    }
+
+    .textzin {
+        font-size: 20px
+    }
+
+    .inscricao-grande {
+        height: 78px;
+        font-size: 20px;
+    }
+
+    .instagram {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .Navbar__Items,
+    .Navbar {
+        flex-direction: column;
+    }
+
+    .Navbar__Items {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        align-self: flex-start;
+        margin-left: 7%;
+    }
+
+    .Navbar__ToggleShow {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin-top: 2%;
+        justify-content: space-around;
+    }
+
+    .inscricao {
+        position: absolute;
+        align-self: flex-end;
+    }
+
+    .Navbar__Link-toggle {
+        align-self: flex-start;
+        display: flex;
+        cursor: pointer;
+        background-color: #add8e6;
+        color: #141414;
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo {
+        font-size: 80px;
+    }
+
+    .textzin {
+        font-size: 20px
+    }
+
+    .conteudo {
+        height: 700px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 985px) {
+    .textzin {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Navbar__ToggleShow {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 150px;
+    }
+
+    .Navbar__Items{
+        width: 100%;
+    }
+
+    .Navbar__Link {
+        width: 300px;
+        padding-bottom: 8px;
+        border-bottom: #ADD8E6 2px solid;
+    }
+    
+    .text-wrapper {
+        text-align: center;
+    }
+
+    .textzin {
+        padding: 0
+    }
+
+    .conteudo {
+        margin-inline: 30px;
+    }
+
+    .textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .botoes {
+        align-items: center;
+    }
+
+    .title-wrapper {
+        margin: 0
+    }
+
+    .titulo {
+        margin: 0
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .logo {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .Navbar__ToggleShow {
+        margin-top: 2%;
+    }
+
+    .conteudo {
+        padding: 30px;
+    }
+    .titulo {
+        font-size: 60px;
+    }
+
+    .textzin {
+        font-size: 17px;
+    }
+
+    .inscricao-grande {
+        padding-inline: 50px;
+    }
+
+    .instagram {
+        padding-inline: 50px
+    }
+
+    .logo {
+        background-image: url("static/img/logo-pequena.png");
+        height: 39px;
+        width: 39px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .conteudo {
+        height: fit-content;
+        margin-top: 700px;
+    }
+
+    .inscricao-grande {
+        padding-inline: 25px;
+        height: 65px;
+    }
+
+    .instagram {
+        padding-inline: 25px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .textzin {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .logo {
+        display: none;
+    }
+}
