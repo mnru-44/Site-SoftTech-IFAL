@@ -1,183 +1,329 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SoftTech IFAL</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
 
-    <body>
-        <div class="Navbar">
-            <div class="logo"></div>
-            <div class="Navbar__Link-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <nav class="Navbar__Items">
-                <div id="home" class="Navbar__Link">
-                    <div class="text-wrapper">
-                        Home
-                    </div>
-                </div>
-                <div id="programacao" class="Navbar__Link">
-                    <div class="text-wrapper">
-                        Programação
-                    </div>
-                </div>
-                <div class="Navbar__Link">
-                    <div class="text-wrapper">
-                        Participantes
-                    </div>
-                </div>
-                <div>
-                    Minicursos e Competições
-                </div>
-            </nav>
-            <a class="inscricao" href="https://www.google.com">Faça sua inscrição</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftTech IFAL</title>
+    <title>SoftTech IFAL</title>
+    <meta name="title" content="SoftTech IFAL" />
+    <meta name="description"
+        content="Sejam bem-vindos ao evento SoftTech IFAL! No dia 27 novembro de 2023, o SoftTech IFAL oferecerá uma programação repleta de atividades para explorar." />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://softtechifal.netlify.app/" />
+    <meta property="og:title" content="SoftTech IFAL" />
+    <meta property="og:description"
+        content="Sejam bem-vindos ao evento SoftTech IFAL! No dia 27 novembro de 2023, o SoftTech IFAL oferecerá uma programação repleta de atividades para explorar." />
+    <meta property="og:image"
+        content="https://images.even3.com.br/k7sNiEp1fT69ZYxNh0PtmRV7C3A=/fit-in/250x250/smart/even3.blob.core.windows.net/logos/IMG-20231024-WA0065.f00a82e0fc6440b38c1a.jpg" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://softtechifal.netlify.app/" />
+    <meta property="twitter:title" content="SoftTech IFAL" />
+    <meta property="twitter:description"
+        content="Sejam bem-vindos ao evento SoftTech IFAL! No dia 27 novembro de 2023, o SoftTech IFAL oferecerá uma programação repleta de atividades para explorar." />
+    <meta property="twitter:image"
+        content="https://images.even3.com.br/k7sNiEp1fT69ZYxNh0PtmRV7C3A=/fit-in/250x250/smart/even3.blob.core.windows.net/logos/IMG-20231024-WA0065.f00a82e0fc6440b38c1a.jpg" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/favicon.ico" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="Navbar">
+        <div class="logo"></div>
+        <div class="Navbar__Link-toggle">
+            <i class="fas fa-bars"></i>
         </div>
-        <div class="frame">
-            <div class="home">
-                <div class="textos">
-                    <div class="title-wrapper">
-                        <p class="titulo">SoftTech IFAL</p>
-                    </div>
-                    <div class="botoes">
-                        <div class="text-wrapper">
-                            <p class="textzin">Essa iniciativa tem como objetivo principal apresentar o novo curso superior em Engenharia de Software à comunidade estudantil do IFAL Palmeira dos Índios e permitir que seja descoberto o vasto horizonte de possibilidades que essa área proporciona.
+        <nav class="Navbar__Items">
+            <div id="home" class="Navbar__Link">
+                <div class="text-wrapper">
+                    Home
+                </div>
+            </div>
+            <div id="programacao" class="Navbar__Link">
+                <div class="text-wrapper">
+                    Programação
+                </div>
+            </div>
+            <div id="participantes-nav" class="Navbar__Link">
+                <div class="text-wrapper">
+                    Participantes
+                </div>
+            </div>
+            <div id="competicoes" class="Navbar__Link">
+                <div class="text-wrapper">
+                    Competições
+                </div>
+            </div>
+            <div class="Navbar__Link">
+                <div class="text-wrapper">
+                    <i class="far fa-envelope"></i>&nbsp;&nbsp;softtech.ifal@gmail.com
+                </div>
+            </div>
+        </nav>
+        <a class="inscricao" href="https://www.even3.com.br/softtech-ifal/" target="_blank">Faça sua inscrição</a>
+    </div>
+    <div class="frame">
+        <div class="home">
+            <div class="textos">
+                <div class="title-wrapper">
+                    <p class="titulo">SoftTech IFAL</p>
+                </div>
+                <div class="botoes">
+                    <div class="text-wrapper">
+                        <p class="textzin">Sejam bem-vindos ao evento SoftTech IFAL! No dia 27 de Novembro de 2023, o
+                            SoftTech IFAL oferecerá uma programação repleta de atividades para explorar.
                             <br><br>Siga-nos no Instagram para não perder as novidades!
-                            </p>
+                        </p>
+                    </div>
+                    <a class="inscricao-grande" href="https://www.even3.com.br/softtech-ifal/" target="_blank">
+                        <i class="fas fa-chevron-right"></i>&nbsp;Faça sua inscrição
+                    </a>
+                    <a class="instagram" href="https://www.instagram.com/softtechifal/" target="_blank">
+                        <i class="fab fa-instagram"></i>&nbsp;@softtechifal
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="programacao">
+            <table class="tabela1">
+                <thead>
+                    <th colspan="2" class="tabela-header">
+                        PROGRAMAÇÃO DO EVENTO
+                    </th>
+                </thead>
+                <tbody>
+                    <tr class="dia-head">
+                        <td>
+                            <i class="far fa-clock"></i>&nbsp;Horário
+                        </td>
+                        <td>
+                            <i class="far fa-calendar"></i>&nbsp;&nbsp;Dia 27/11/2023 (Segunda-feira)
+                        </td>
+                    </tr>
+                    <tr class="dia1">
+                        <td class="dia1-hora">
+                            07:00/07:30
+                        </td>
+                        <td class="dia1-dia">
+                            Credenciamento e abertura - Auditório
+                        </td>
+                    </tr>
+                    <tr class="dia">
+                        <td class="dia-horario">
+                            07:30/08:40
+                        </td>
+                        <td class="dia-evento">
+                            Palestra 1 - Auditório | Carreiras do Engenheiro de Software | Lucas Barbosa e Francisco
+                            Racklyn (UFAL | EDGE)
+                        </td>
+                    </tr>
+                    <tr class="dia">
+                        <td class="dia-horario">
+                            08:40/09:50
+                        </td>
+                        <td class="dia-evento">
+                            Exposição dos componentes curriculares do curso de Engenharia de Software - Salas 101, 102 e
+                            103
+                        </td>
+                    </tr>
+                    <tr class="dia">
+                        <td class="dia-horario">
+                            09:50/11:00
+                        </td>
+                        <td class="dia-evento">
+                            Palestra 2 - Auditório | Mulheres na Engenharia | Rayane Duarte (UFAL | Tracking Trade)
+                        </td>
+                    </tr>
+                    <tr class="dia">
+                        <td class="dia-horario">
+                            11:00/12:10
+                        </td>
+                        <td class="dia-evento">
+                            Mesa Redonda - Audítorio | Trajetórias dos egressos na Engenharia de Software
+                        </td>
+                    </tr>
+                    <tr class="dia">
+                        <td class="dia-horario">
+                            12:10/13:00
+                        </td>
+                        <td class="dia-evento">
+                            Almoço
+                        </td>
+                    </tr>
+                    <tr class="dia">
+                        <td class="dia-horario">
+                            13:00/14:10
+                        </td>
+                        <td class="dia-evento">
+                            Palestra 3 - Auditório | Competições de Programação: um diferencial na academia e no mercado
+                            | Jackson Barbosa (UFAL | Weni)
+                        </td>
+                    </tr>
+                    <tr class="dia">
+                        <td class="dia-horario">
+                            14:10/15:20
+                        </td>
+                        <td class="dia-evento">
+                            Exposição dos componentes curriculares do curso de Engenharia de Software - Salas 101, 102 e
+                            103
+                        </td>
+                    </tr>
+                    <tr class="dia">
+                        <td class="dia-horario">
+                            15:00/15:30
+                        </td>
+                        <td class="dia-evento">
+                            Ambientação para o Torneio de Programação - Lab 66
+                        </td>
+                    </tr>
+                    <tr class="dia">
+                        <td class="dia-horario">
+                            15:30/17:30
+                        </td>
+                        <td class="dia-evento">
+                            Torneio de Programação - Lab 66
+                        </td>
+                    </tr>
+                    <tr class="dia">
+                        <td class="dia-horario">
+                            16:40/17:30
+                        </td>
+                        <td class="dia-evento">
+                            Quiz | Torta na cara - Auditório
+                        </td>
+                    </tr>
+                    <tr class="dia">
+                        <td class="dia-horario">
+                            17:30/18:20
+                        </td>
+                        <td class="dia-evento">
+                            Encerramento e Premiação - Auditório
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="participantes" class="participantes">
+            <div class="topo">PARTICIPANTES</div>
+            <div class="swiper mySwiper" style=--swiper-navigation-color:#0000000>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="participante">
+                            <div class="container-p1">
+                                <p class="title1">Rayane Quézia</p>
+                                <div class="text-wrapper-part">
+                                    <p class="text1">- Desenvolvedora na Tracking Trade<br>- Cursando Ciência da
+                                        Computação na Universidade Federal de Alagoas</p>
+                                </div>
+                                <a id="ig-part" class="instagram" href="https://www.instagram.com/rayquezia03/"
+                                    target="_blank">
+                                    <i class="fab fa-instagram"></i>&nbsp;@rayquezia03
+                                </a>
+                            </div>
+                            <img class="img1" src="static/img/rayane-img.jpg">
                         </div>
-                        <a class="inscricao-grande" href="https://www.google.com">
-                            <i class="fas fa-chevron-right"></i>&nbsp;Faça sua inscrição
-                        </a>
-                        <a class="instagram" href="https://www.instagram.com/softtech_ifal/">                                
-                            <i class="fab fa-instagram"></i>&nbsp;@softtech_ifal
-                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="participante">
+                            <div class="container-p1">
+                                <p class="title1">Jackson Barbosa</p>
+                                <div class="text-wrapper-part">
+                                    <p class="text1">- Desenvolvedor back-end Pleno | Weni<br>- Graduando em Ciência da Computação | UFAL</p>
+                                </div>
+                                <a id="ig-part" class="instagram" href="https://www.instagram.com/barbosajackson.cpp/"
+                                    target="_blank">
+                                    <i class="fab fa-instagram"></i>&nbsp;@barbosajackson.cpp
+                                </a>
+                            </div>
+                            <img class="img1" src="static/img/jackson-img.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="participante">
+                            <div class="container-p1">
+                                <p id="francisco-title" class="title1">Francisco Racklyn</p>
+                                <div class="text-wrapper-part">
+                                    <p class="text1">- Graduando em Ciência da Computação | UFAL<br>- Desenvolvedor júnior no Centro de Inovação Edge<br>- Técnico em informática pelo IFAL Palmeira</p>
+                                </div>
+                                <a id="ig-part" class="instagram" href="https://www.instagram.com/racklyn_sotero/"
+                                    target="_blank">
+                                    <i class="fab fa-instagram"></i>&nbsp;@racklyn_sotero
+                                </a>
+                            </div>
+                            <img class="img1" src="static/img/francisco-img.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="participante">
+                            <div class="container-p1">
+                                <p class="title1">Lucas Barbosa</p>
+                                <div class="text-wrapper-part">
+                                    <p class="text1">- Técnico em Informática pelo IFAL Palmeira<br>- Graduando em Ciência da Computação | UFAL<br>- Analista de Qualidade (QA) no Centro de Inovação Edge</p>
+                                </div>
+                                <a id="ig-part" class="instagram" href="https://www.instagram.com/luck_barbosa_/"
+                                    target="_blank">
+                                    <i class="fab fa-instagram"></i>&nbsp;luck_barbosa_
+                                </a>
+                            </div>
+                            <img class="img1" src="static/img/lucas-img.jpg">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="programacao">
-                <table class="tabela1">
-                    <thead>
-                        <th colspan="2" class="tabela-header">
-                            PROGRAMAÇÃO DO EVENTO
-                        </th>
-                    </thead>
-                    <tbody>
-                        <tr class="dia-head">
-                            <td>
-                                <i class="far fa-clock"></i>&nbsp;&nbsp;Horário
-                            </td>
-                            <td>
-                                <i class="far fa-calendar"></i>&nbsp;&nbsp;Dia 27/11/2023 (Segunda-feira)
-                            </td>
-                        </tr>
-                        <tr class="dia1">
-                            <td class="dia1-hora">
-                                07:00/07:40
-                            </td>
-                            <td class="dia1-dia">
-                                Credenciamento e Abertura - Auditório
-                            </td>
-                        </tr>
-                        <tr class="dia">
-                            <td class="dia-horario">
-                                07:30/08:40
-                            </td>
-                            <td class="dia-evento">
-                                Palestra 1 - Auditório | Lucas Barbosa (UFAL) | Carreiras do Engenheiro de Software
-                            </td>
-                        </tr>
-                        <tr class="dia">
-                            <td class="dia-horario">
-                                08:40/10:40
-                            </td>
-                            <td class="dia-evento">
-                                Exposição dos Componentes Curriculares do curso de Engenharia de Software - Salas 101, 102 e 103
-                            </td>
-                        </tr>
-                        <tr class="dia">
-                            <td class="dia-horario">
-                                08:40/10:40
-                            </td>
-                            <td class="dia-evento">
-                                Minicurso Git e GitHub - Lab 66
-                            </td>
-                        </tr>
-                        <tr class="dia">
-                            <td class="dia-horario">
-                                10:30/11:30
-                            </td>
-                            <td class="dia-evento">
-                                Palestra 2 - Auditório | Rayane (UFAL) | Mulheres na Engenharia
-                            </td>
-                        </tr>
-                        <tr class="dia">
-                            <td class="dia-horario">
-                                11:30/12:00
-                            </td>
-                            <td class="dia-evento">
-                                Ambientação para o Torneio de Programação - Lab 66
-                            </td>
-                        </tr>
-                        <tr class="dia">
-                            <td class="dia-horario">
-                                12:00/13:00
-                            </td>
-                            <td class="dia-evento">
-                                Almoço
-                            </td>
-                        </tr>
-                        <tr class="dia">
-                            <td class="dia-horario">
-                                13:00/14:00
-                            </td>
-                            <td class="dia-evento">
-                                Palestra 3 - Auditório | Jackson Barbosa (UFAL) | Competições de Programação
-                            </td>
-                        </tr>
-                        <tr class="dia">
-                            <td class="dia-horario">
-                                14:00/16:00
-                            </td>
-                            <td class="dia-evento">
-                                Torneio de Programação - Lab 66
-                            </td>
-                        </tr>
-                        <tr class="dia">
-                            <td class="dia-horario">
-                                14:40/16:40
-                            </td>
-                            <td class="dia-evento">
-                                Exposição dos Componentes Curriculares do curso de Engenharia de Software - Salas 101, 102 e 103
-                            </td>
-                        </tr>
-                        <tr class="dia">
-                            <td class="dia-horario">
-                                16:40/17:30
-                            </td>
-                            <td class="dia-evento">
-                                Mesa Redonda - Egressos de Informática que atuam na área
-                            </td>
-                        </tr>
-                        <tr class="dia">
-                            <td class="dia-horario">
-                                17:30/18:20
-                            </td>
-                            <td class="dia-evento">
-                                Encerramento e Premiação
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="participantes">
-                Participantes
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div id="competicoes-frame" class="participantes">
+            <div id="conteudo-compet" class="conteudo-participantes">
+                <div class="topo">COMPETIÇÕES</div>
+                <div class="participante1">
+                    <div class="container-p1">
+                        <p class="title1">TORNEIO DE PROGRAMAÇÃO</p>
+                        <div id="text-wrapper-compet" class="text-wrapper-part">
+                            <p id="text-compet" class="text1">Participe do 2º Torneio de Programação do IFAL - Palmeira
+                                dos Índios e não perca a chance de mostrar suas habilidades e se destacar na comunidade
+                                tecnológica!</p>
+                        </div>
+                    </div>
+                    <img class="img1" src="static/img/torneio.jpg">
+                </div>
+                <div id="tortanacara" class="participante2">
+                    <div id="container2-compet" class="container-p2">
+                        <p class="title2">QUIZ | TORTA NA CARA</p>
+                        <div id="text-wrapper-compet" class="text-wrapper-part">
+                            <p id="text-compet" class="text2">Participe do Quiz "Torta na Cara" no evento SoftTech IFAL!
+                                Divirta-se enquanto testa seus conhecimentos, ganha prêmios e, quem sabe, acaba levando
+                                uma torta na cara.</p>
+                        </div>
+                    </div>
+                    <img class="img1" src="static/img/tortanacara.jpeg">
+                </div>
             </div>
         </div>
-    </body>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
     <script type="text/javascript" src="script.js"></script>
+</body>
+
 </html>
