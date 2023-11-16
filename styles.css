@@ -379,6 +379,7 @@ td {
 .text1 {
     font-size: 36px;
     line-height: 1;
+    margin-right: 128px;
 }
 
 .participante2 {
@@ -404,18 +405,6 @@ td {
 
 #ig-part {
     padding-inline: 142px
-}
-
-.participante3 {
-    display: flex;
-    flex-direction: row;
-    font-family: "Sulphur Point";
-    align-items: center;
-    margin-bottom: 100px;
-}
-
-#text-wrapper-part3 {
-    margin-right: 130px
 }
 
 #text-wrapper-compet {
@@ -453,6 +442,10 @@ td {
     height: 100%;
 }
 
+.swiper-wrapper {
+    align-items: center
+}
+
 .swiper-slide {
     display: flex;
     flex-direction: row;
@@ -483,6 +476,12 @@ td {
 .swiper-pagination-bullet-active-prev-prev {
     background-color: #ADD8E6;
     opacity: 0.5;
+}
+
+#inscricao-torneio {
+    padding-inline: 38px;
+    height: 66px;
+    font-size: 28px;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -562,9 +561,21 @@ td {
         text-align: center;
     }
     
-    .text1, #text-compet {
+    .text1 {
         font-size: 28px;
         text-align: center;
+        margin-right: 0px
+    }
+
+    #text-compet {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #text-wrapper-compet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .title2 {
@@ -723,14 +734,32 @@ td {
     }
 }
 
-@media only screen and (max-width: 985px) {
+@media only screen and (max-width: 1120px) {
+    .title-wrapper {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .titulo {
+        margin-bottom: 20px;
+        margin-top: 40px;
+        font-size: 124px;
+        line-height: 1;
+    }
+
+    .botoes {
+        align-items: center;
+    }
+
     .textzin {
         padding: 0;
+        text-align: center;
     }
     .textos {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-content: center;
     }
 
     .tabela-header, .topo {
